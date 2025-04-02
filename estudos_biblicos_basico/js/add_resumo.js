@@ -1,6 +1,6 @@
 document
   .getElementById('resumoForm')
-  .addEventListener('submit', function(event) {
+  .addEventListener('submit', function (event) {
     event.preventDefault();
     const referencia = document.getElementById('referencia').value;
     const resumo = document.getElementById('resumo').value;
@@ -10,13 +10,20 @@ document
     title.textContent = referencia;
     const description = document.createElement('p');
     description.textContent = resumo;
-    
+
     listItem.appendChild(title);
     listItem.appendChild(description);
-    
+
     document.getElementById('resumos').appendChild(listItem);
 
     document.getElementById('referencia').value = '';
     document.getElementById('resumo').value = '';
   }
-);
+  );
+
+document
+  .getElementById('cancelar')
+  .addEventListener('click', function (event) {
+    document.getElementById('referencia').value = '';
+    document.getElementById('resumo').value = '';
+  })
