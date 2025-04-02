@@ -14,7 +14,7 @@ document
     listItem.appendChild(title);
     listItem.appendChild(description);
 
-    // document.getElementById('Resumos').appendChild(listItem);
+    document.getElementById('resumos').appendChild(listItem);
 
     document.getElementById('referencia').value = '';
     document.getElementById('resumo').value = '';
