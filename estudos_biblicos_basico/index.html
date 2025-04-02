@@ -7,6 +7,16 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <h1>Estudos Biblicos</h1>
+    <h1 class='title'>Estudos Biblicos</h1>
+
+    <form id="resumoForm">
+      <input type="text" id="referencia" placeholder="Referencia" required>
+      <textarea id="resumo" placeholder="Resumo" required></textarea>
+      <button type="submit">Add Resumo</button>
+    </form>
+
+    <ul id="resumos"></ul>
+
+    <script src="js/add_resumo.js"></script>
   </body>
 </html>
