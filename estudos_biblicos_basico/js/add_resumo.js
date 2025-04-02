@@ -10,11 +10,11 @@ document
     title.textContent = referencia;
     const description = document.createElement('p');
     description.textContent = resumo;
-    
+
     listItem.appendChild(title);
     listItem.appendChild(description);
-    
-    document.getElementById('resumos').appendChild(listItem);
+
+    // document.getElementById('Resumos').appendChild(listItem);
 
     document.getElementById('referencia').value = '';
     document.getElementById('resumo').value = '';
